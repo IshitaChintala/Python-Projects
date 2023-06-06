@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun  5 10:37:32 2023
+
+@author: ishita
+"""
+#for loop to make it go from 1 to 100- 101 to include 100 since 1 to 100 will end at 99
+for i in range (1, 101):
+    #if condition for divisibility rules- % results in remainder, so if the number divides by 3 and 5 and the remainder is 0, print fizzbuzz
+    if i % 3 == 0 and i % 5 == 0: 
+        print("FizzBuzz")
+    #elif condition for if number is only divisible by 3 and not 5, result in fizz
+    elif i % 3 == 0 and i % 5 != 0: 
+        print("Fizz")
+    elif i % 5 == 0 and i % 3 != 0: 
+        #elif condition for if divisible by 3 and not 5, print buzz
+        print("Buzz")
+        #if number is not divisble by 3 or 5, print number as is
+    else: 
+        print(i)
+        
+        
+   # if i % 3: 
+   #     print("Fizz")
+  #  else: 
+   #     print(i)
+        
+   
